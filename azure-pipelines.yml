@@ -120,7 +120,7 @@ stages:
               runtimeStack: DOCKER|microsoft/azure-functions-dotnet-core3.0:3.0
               startUpCommand: 'func azure functionapp publish $(functionAppName) --no-bundler'
           - task: AzureAppServiceSettings@1
-  displayName: 'Update web app settings'
+  displayName: 'Update web app settings again'
   inputs:
     azureSubscription: 'Resource Manager - Tailspin - Space Game'
     appName: $(WebAppName)
